@@ -97,14 +97,14 @@ set_location_assignment PIN_A21 -to SYNCIN_N
 set_instance_assignment -name IO_STANDARD "2.5 V" -to SYNCIN_N
 set_location_assignment PIN_F12 -to ADCA_DATA1_N
 set_instance_assignment -name IO_STANDARD "2.5 V" -to ADCA_DATA1_N
-set_location_assignment PIN_A19 -to HSMC_CLKOUT_P[1]
-set_instance_assignment -name IO_STANDARD "2.5 V" -to HSMC_CLKOUT_P[1]
-set_location_assignment PIN_G15 -to HSMC_CLKIN_P[1]
-set_instance_assignment -name IO_STANDARD "2.5 V" -to HSMC_CLKIN_P[1]
-set_location_assignment PIN_A18 -to HSMC_CLKOUT_N[1]
-set_instance_assignment -name IO_STANDARD "2.5 V" -to HSMC_CLKOUT_N[1]
-set_location_assignment PIN_G14 -to HSMC_CLKIN_N[1]
-set_instance_assignment -name IO_STANDARD "2.5 V" -to HSMC_CLKIN_N[1]
+set_location_assignment PIN_A19 -to DAC_DCLKIN_P
+set_instance_assignment -name IO_STANDARD "2.5 V" -to DAC_DCLKIN_P
+set_location_assignment PIN_G15 -to ADC_DCLKOUT_P
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ADC_DCLKOUT_P
+set_location_assignment PIN_A18 -to DAC_DCLKIN_N
+set_instance_assignment -name IO_STANDARD "2.5 V" -to DAC_DCLKIN_N
+set_location_assignment PIN_G14 -to ADC_DCLKOUT_N
+set_instance_assignment -name IO_STANDARD "2.5 V" -to ADC_DCLKOUT_N
 
 # Bank 3
 set_location_assignment PIN_C13 -to HSMC_TX_P[8]
