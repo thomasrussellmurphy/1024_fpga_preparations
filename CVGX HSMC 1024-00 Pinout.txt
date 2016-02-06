@@ -1,6 +1,8 @@
 #============================================================
 # HSMC, 1024-00 2.5V logic test pinout
 #============================================================
+
+# Bank 1
 set_location_assignment PIN_W4 -to HSMC_GXB_TX_P[3]
 set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to HSMC_GXB_TX_P[3]
 set_location_assignment PIN_V2 -to HSMC_GXB_RX_P[3]
@@ -29,6 +31,8 @@ set_location_assignment PIN_D12 -to HSMC_D[2]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to HSMC_D[2]
 set_location_assignment PIN_H13 -to HSMC_D[3]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to HSMC_D[3]
+
+# Bank 2
 set_location_assignment PIN_E10 -to HSMC_TX_P[0]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to HSMC_TX_P[0]
 set_location_assignment PIN_N12 -to HSMC_RX_P[0]
@@ -101,6 +105,8 @@ set_location_assignment PIN_A18 -to HSMC_CLKOUT_N[1]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to HSMC_CLKOUT_N[1]
 set_location_assignment PIN_G14 -to HSMC_CLKIN_N[1]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to HSMC_CLKIN_N[1]
+
+# Bank 3
 set_location_assignment PIN_C13 -to HSMC_TX_P[8]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to HSMC_TX_P[8]
 set_location_assignment PIN_E18 -to HSMC_RX_P[8]
