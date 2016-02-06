@@ -181,9 +181,9 @@ set_location_assignment PIN_A24 -to CDCE_PLL_LOCK
 set_instance_assignment -name IO_STANDARD "2.5 V" -to CDCE_PLL_LOCK
 set_location_assignment PIN_A17 -to HSMC_CLKOUT_P[2]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to HSMC_CLKOUT_P[2]
-set_location_assignment PIN_L8 -to HSMC_CLKIN_P[2]
-set_instance_assignment -name IO_STANDARD "2.5 V" -to HSMC_CLKIN_P[2]
+set_location_assignment PIN_L8 -to FPGA_REF_CLK_P
+set_instance_assignment -name IO_STANDARD "2.5 V" -to FPGA_REF_CLK_P
 set_location_assignment PIN_A16 -to HSMC_CLKOUT_N[2]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to HSMC_CLKOUT_N[2]
-set_location_assignment PIN_K9 -to HSMC_CLKIN_N[2]
-set_instance_assignment -name IO_STANDARD "2.5 V" -to HSMC_CLKIN_N[2]
+set_location_assignment PIN_K9 -to FPGA_REF_CLK_N
+set_instance_assignment -name IO_STANDARD "2.5 V" -to FPGA_REF_CLK_N
