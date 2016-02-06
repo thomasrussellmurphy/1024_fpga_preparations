@@ -33,44 +33,44 @@ set_location_assignment PIN_H13 -to HSMC_D[3]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to HSMC_D[3]
 
 # Bank 2
-set_location_assignment PIN_E10 -to HSMC_TX_P[0]
-set_instance_assignment -name IO_STANDARD "2.5 V" -to HSMC_TX_P[0]
+set_location_assignment PIN_E10 -to DACA_DATA1_P
+set_instance_assignment -name IO_STANDARD "2.5 V" -to DACA_DATA1_P
 set_location_assignment PIN_N12 -to HSMC_RX_P[0]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to HSMC_RX_P[0]
-set_location_assignment PIN_E11 -to HSMC_TX_N[0]
-set_instance_assignment -name IO_STANDARD "2.5 V" -to HSMC_TX_N[0]
+set_location_assignment PIN_E11 -to DACA_DATA1_N
+set_instance_assignment -name IO_STANDARD "2.5 V" -to DACA_DATA1_N
 set_location_assignment PIN_M12 -to HSMC_RX_N[0]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to HSMC_RX_N[0]
-set_location_assignment PIN_C9 -to HSMC_TX_P[1]
-set_instance_assignment -name IO_STANDARD "2.5 V" -to HSMC_TX_P[1]
+set_location_assignment PIN_C9 -to DACA_DATA0_P
+set_instance_assignment -name IO_STANDARD "2.5 V" -to DACA_DATA0_P
 set_location_assignment PIN_M11 -to HSMC_RX_P[1]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to HSMC_RX_P[1]
-set_location_assignment PIN_B9 -to HSMC_TX_N[1]
-set_instance_assignment -name IO_STANDARD "2.5 V" -to HSMC_TX_N[1]
+set_location_assignment PIN_B9 -to DACA_DATA0_N
+set_instance_assignment -name IO_STANDARD "2.5 V" -to DACA_DATA0_N
 set_location_assignment PIN_L11 -to HSMC_RX_N[1]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to HSMC_RX_N[1]
-set_location_assignment PIN_D10 -to HSMC_TX_P[2]
-set_instance_assignment -name IO_STANDARD "2.5 V" -to HSMC_TX_P[2]
+set_location_assignment PIN_D10 -to DAC_FCLKIN_P
+set_instance_assignment -name IO_STANDARD "2.5 V" -to DAC_FCLKIN_P
 set_location_assignment PIN_H18 -to HSMC_RX_P[2]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to HSMC_RX_P[2]
-set_location_assignment PIN_C10 -to HSMC_TX_N[2]
-set_instance_assignment -name IO_STANDARD "2.5 V" -to HSMC_TX_N[2]
+set_location_assignment PIN_C10 -to DAC_FCLKIN_N
+set_instance_assignment -name IO_STANDARD "2.5 V" -to DAC_FCLKIN_N
 set_location_assignment PIN_H17 -to HSMC_RX_N[2]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to HSMC_RX_N[2]
-set_location_assignment PIN_A12 -to HSMC_TX_P[3]
-set_instance_assignment -name IO_STANDARD "2.5 V" -to HSMC_TX_P[3]
+set_location_assignment PIN_A12 -to DACB_DATA0_P
+set_instance_assignment -name IO_STANDARD "2.5 V" -to DACB_DATA0_P
 set_location_assignment PIN_L12 -to HSMC_RX_P[3]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to HSMC_RX_P[3]
-set_location_assignment PIN_B11 -to HSMC_TX_N[3]
-set_instance_assignment -name IO_STANDARD "2.5 V" -to HSMC_TX_N[3]
+set_location_assignment PIN_B11 -to DACB_DATA0_N
+set_instance_assignment -name IO_STANDARD "2.5 V" -to DACB_DATA0_N
 set_location_assignment PIN_K11 -to HSMC_RX_N[3]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to HSMC_RX_N[3]
-set_location_assignment PIN_B10 -to HSMC_TX_P[4]
-set_instance_assignment -name IO_STANDARD "2.5 V" -to HSMC_TX_P[4]
+set_location_assignment PIN_B10 -to DACB_DATA1_P
+set_instance_assignment -name IO_STANDARD "2.5 V" -to DACB_DATA1_P
 set_location_assignment PIN_H15 -to HSMC_RX_P[4]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to HSMC_RX_P[4]
-set_location_assignment PIN_A11 -to HSMC_TX_N[4]
-set_instance_assignment -name IO_STANDARD "2.5 V" -to HSMC_TX_N[4]
+set_location_assignment PIN_A11 -to DACB_DATA1_N
+set_instance_assignment -name IO_STANDARD "2.5 V" -to DACB_DATA1_N
 set_location_assignment PIN_J16 -to HSMC_RX_N[4]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to HSMC_RX_N[4]
 set_location_assignment PIN_C20 -to HSMC_TX_P[5]
@@ -89,12 +89,12 @@ set_location_assignment PIN_C15 -to HSMC_TX_N[6]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to HSMC_TX_N[6]
 set_location_assignment PIN_G17 -to HSMC_RX_N[6]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to HSMC_RX_N[6]
-set_location_assignment PIN_B22 -to HSMC_TX_P[7]
-set_instance_assignment -name IO_STANDARD "2.5 V" -to HSMC_TX_P[7]
+set_location_assignment PIN_B22 -to SYNCIN_P
+set_instance_assignment -name IO_STANDARD "2.5 V" -to SYNCIN_P
 set_location_assignment PIN_G12 -to HSMC_RX_P[7]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to HSMC_RX_P[7]
-set_location_assignment PIN_A21 -to HSMC_TX_N[7]
-set_instance_assignment -name IO_STANDARD "2.5 V" -to HSMC_TX_N[7]
+set_location_assignment PIN_A21 -to SYNCIN_N
+set_instance_assignment -name IO_STANDARD "2.5 V" -to SYNCIN_N
 set_location_assignment PIN_F12 -to HSMC_RX_N[7]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to HSMC_RX_N[7]
 set_location_assignment PIN_A19 -to HSMC_CLKOUT_P[1]
