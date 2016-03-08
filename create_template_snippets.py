@@ -41,4 +41,5 @@ def main():
       print(assignment)
 
 # Call the main() function to begin the program.
-main()
+if __name__ == "__main__":
+  main()
