@@ -1,4 +1,4 @@
-# 1024-00_fpga_preparations
+# 1024_fpga_preparations
 
 Preparing information and material for bringup of the 1024 design and revisions
 
