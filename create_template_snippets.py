@@ -15,6 +15,8 @@ HDL_NAME_KEY = 'HDL Name'
 PIN_ASSIGNMENT_TEMPLATE = '''set_location_assignment {pin} -to {signal}
 set_instance_assignment -name IO_STANDARD "{standard}" -to {signal}
 '''
+TOGGLE_RATE_ASSIGNMENT_TEMPLATE='''set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "{rate}" -to {signal}
+'''
 MODULE_HEADER_TEMPLATE = '''{direction} {name};
 '''
 
