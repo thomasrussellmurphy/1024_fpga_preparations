@@ -10,6 +10,7 @@ DEVICE_PIN_KEY = '5CGXFC5C6F27C7N Pin'
 PIN_DIRECTION_KEY = 'FPGA Pin Direction'
 IO_STANDARD_KEY = 'I/O Standard'
 HDL_NAME_KEY = 'HDL Name'
+SW_RATE_KEY = "Max Switching Rate"
 
 # String constant for generating Quartus Setting File snippet
 PIN_ASSIGNMENT_TEMPLATE = '''set_location_assignment {pin} -to {signal}
