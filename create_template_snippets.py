@@ -48,15 +48,22 @@ def main():
   with open(source_path, 'rU') as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
-      assignment = PIN_ASSIGNMENT_TEMPLATE.format(
+      pin_assign = PIN_ASSIGNMENT_TEMPLATE.format(
         pin = row[DEVICE_PIN_KEY],
         signal = row[HDL_NAME_KEY],
         standard = row[IO_STANDARD_KEY])
       header = MODULE_HEADER_TEMPLATE.format(
         direction = row[PIN_DIRECTION_KEY],
         name = row[HDL_NAME_KEY])
+      sw_rate = TOGGLE_RATE_ASSIGNMENT_TEMPLATE.format(
+        rate = row[SW_RATE_KEY],
+        signal = row[HDL_NAME_KEY])
 
-      assignments.append(assignment)
+      # Text to be output
+      # QSF assignments are pin assignments and toggle rate assignments
+      # Headers are material to put in Verilog top level
+      assignments.append(pin_assign)
+      assignments.append(sw_rate)
       headers.append(header)
 
   output_base_path_str = source_path_str
