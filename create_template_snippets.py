@@ -11,6 +11,7 @@ PIN_DIRECTION_KEY = 'FPGA Pin Direction'
 IO_STANDARD_KEY = 'I/O Standard'
 HDL_NAME_KEY = 'HDL Name'
 SW_RATE_KEY = "Max Switching Rate"
+RESISTOR_STATE_KEY = "Weak Pull Up Resistor"
 
 # String constant for generating Quartus Setting File snippet
 PIN_ASSIGNMENT_TEMPLATE = '''set_location_assignment {pin} -to {signal}
@@ -18,7 +19,10 @@ set_instance_assignment -name IO_STANDARD "{standard}" -to {signal}
 '''
 TOGGLE_RATE_ASSIGNMENT_TEMPLATE='''set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "{rate}" -to {signal}
 '''
-MODULE_HEADER_TEMPLATE = '''{direction} {name};
+MODULE_HEADER_TEMPLATE = '''{direction} {name},
+'''
+PULL_UP_RESISTOR_TEMPLATE = '''set_instance_assignment -name WEAK_PULL_UP_RESISTOR {state} -to {pin}
+
 '''
 
 # Constants for filename manipulation
@@ -58,12 +62,16 @@ def main():
       sw_rate = TOGGLE_RATE_ASSIGNMENT_TEMPLATE.format(
         rate = row[SW_RATE_KEY],
         signal = row[HDL_NAME_KEY])
+      res_state = PULL_UP_RESISTOR_TEMPLATE.format(
+        state = row[RESISTOR_STATE_KEY],
+        pin = row[DEVICE_PIN_KEY])
 
       # Text to be output
-      # QSF assignments are pin assignments and toggle rate assignments
+      # QSF assignments are pin naming, toggle rate, resistor state
       # Headers are material to put in Verilog top level
       assignments.append(pin_assign)
       assignments.append(sw_rate)
+      assignments.append(res_state)
       headers.append(header)
 
   output_base_path_str = source_path_str
