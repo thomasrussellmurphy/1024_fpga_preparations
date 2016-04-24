@@ -22,7 +22,6 @@ TOGGLE_RATE_ASSIGNMENT_TEMPLATE='''set_instance_assignment -name IO_MAXIMUM_TOGG
 MODULE_HEADER_TEMPLATE = '''{direction} {name},
 '''
 PULL_UP_RESISTOR_TEMPLATE = '''set_instance_assignment -name WEAK_PULL_UP_RESISTOR {state} -to {pin}
-
 '''
 
 # Constants for filename manipulation
